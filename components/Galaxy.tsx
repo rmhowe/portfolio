@@ -94,6 +94,7 @@ function GalaxyPoints() {
       {points.map((point, index) => (
         <Point
           key={index}
+          // @ts-ignore
           position={point.position}
           color={point.color}
           size={Math.random() * 0.5 + 0.1}
