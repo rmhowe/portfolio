@@ -4,11 +4,13 @@ import cn from 'classnames';
 export const ProjectCard = ({
   title,
   description,
+  image,
   name,
   gradient,
 }: {
   title: string;
   description: string;
+  image: string;
   name: string;
   gradient: string;
 }) => {
@@ -29,7 +31,9 @@ export const ProjectCard = ({
               {description}
             </p>
           </div>
-          <img src="http://placekitten.com/150/150" className="rounded-r-lg" />
+          <div className="rounded-r-lg bg-gray-900 w-24 sm:w-40 flex-none m-1 ml-0">
+            <img src={image} className="rounded-r-lg object-cover h-full" />
+          </div>
         </div>
       </a>
     </Link>

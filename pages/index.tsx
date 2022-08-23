@@ -1,10 +1,7 @@
 import { NextPage } from 'next';
 
-import Link from 'next/link';
-
 import { Shell } from '../components/Shell';
 import { ProjectCard } from '../components/ProjectCard';
-import { ArrowRight } from 'phosphor-react';
 
 const Home: NextPage = () => {
   return (
@@ -32,16 +29,24 @@ const Home: NextPage = () => {
           <ProjectCard
             title="Particle Galaxy"
             description="A 3D galaxy animation made using ThreeJS particles"
+            image="/static/images/particle-galaxy-thumbnail.png"
             name="particle-galaxy"
             gradient="from-[#6EE7B7] via-[#3B82F6] to-[#9333EA]"
           />
+          <ProjectCard
+            title="This Portfolio"
+            description="A simple and minimal showcase of projects I've worked on"
+            image="/static/images/portfolio-thumbnail.png"
+            name=""
+            gradient="from-[#FDE68A] via-[#FCA5A5] to-[#FA709A]"
+          />
         </div>
-        <Link href="/projects">
+        {/* <Link href="/projects">
           <a className="flex items-center gap-1 mt-8 text-gray-600 dark:text-gray-400 hover:text-gray-800 dark:hover:text-gray-200 transition-all">
             See all projects
             <ArrowRight size={20} />
           </a>
-        </Link>
+        </Link> */}
       </div>
     </Shell>
   );
