@@ -5,17 +5,17 @@ export const ProjectCard = ({
   title,
   description,
   image,
-  name,
+  linkTo,
   gradient,
 }: {
   title: string;
   description: string;
   image: string;
-  name: string;
+  linkTo: string;
   gradient: string;
 }) => {
   return (
-    <Link href={`/projects/${name}`}>
+    <Link href={`/projects/${linkTo}`}>
       <a
         className={cn(
           'transform hover:scale-[1.01] transition-all w-full rounded-lg bg-gradient-to-r',
