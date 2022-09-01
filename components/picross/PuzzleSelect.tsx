@@ -26,10 +26,10 @@ export function PuzzleSelect() {
     { number: 10, details: level10 },
   ];
   return (
-    <>
+    <div className="mt-10">
       <h2 className="text-xl md:text-3xl text-center mb-6">Picross</h2>
       <p className="text-center">Select a level</p>
-      <div className="flex flex-wrap justify-between gap-x-14 gap-y-8 w-full max-w-lg mx-auto my-6">
+      <div className="flex flex-wrap justify-between gap-x-14 gap-y-8 w-full max-w-xs mx-auto my-6">
         {levels.map(({ number, details }) => (
           <div
             key={number}
@@ -43,6 +43,6 @@ export function PuzzleSelect() {
           </div>
         ))}
       </div>
-    </>
+    </div>
   );
 }

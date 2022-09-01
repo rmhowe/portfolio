@@ -7,9 +7,9 @@ export const projectList = [
   {
     title: 'Picross',
     description: 'A nonogram puzzle game made using React and Tailwind',
-    image: '/static/images/particle-galaxy-thumbnail.png',
+    image: '/static/images/picross-thumbnail.png',
     linkTo: 'picross',
-    gradient: 'from-[#6EE7B7] via-[#3B82F6] to-[#9333EA]',
+    gradient: 'from-[#a8ff78] to-[#78ffd6]',
     featured: true,
   },
   {
@@ -21,10 +21,11 @@ export const projectList = [
     featured: true,
   },
   {
-    title: 'This Portfolio',
-    description: "A simple and minimal showcase of projects I've worked on",
+    title: 'Portfolio',
+    description:
+      "A simple and minimal showcase of projects I've worked on, built using NextJS and Tailwind, deployed on Cloudflare Pages",
     image: '/static/images/portfolio-thumbnail.png',
-    linkTo: '',
+    linkTo: 'portfolio',
     gradient: 'from-[#FDE68A] via-[#FCA5A5] to-[#FA709A]',
     featured: true,
   },
