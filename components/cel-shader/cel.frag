@@ -6,6 +6,7 @@ uniform float uGlossiness;
 
 varying vec3 vNormal;
 varying vec3 vPointLightDirection;
+varying float vPointLightDistance;
 varying vec3 vVertexToCameraDirection;
 
 void main() {
@@ -17,8 +18,7 @@ void main() {
   // Point Light
   float NdotPL = dot(vNormal, vPointLightDirection);
   float pointLightIntensity = smoothstep(-0.01, 0.01, NdotPL);
-  vec3 pointLight = pointLightIntensity * pointLights[0].color;
-
+  vec3 pointLight = pointLightIntensity * pointLights[0].color * (20.0 / vPointLightDistance);
 
   // Specular Highlight
   vec3 halfVector = normalize(directionalLights[0].direction + vVertexToCameraDirection);
