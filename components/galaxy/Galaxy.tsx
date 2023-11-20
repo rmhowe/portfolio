@@ -96,6 +96,7 @@ function GalaxyPoints() {
           key={index}
           // @ts-ignore
           position={point.position}
+          // @ts-ignore
           color={point.color}
           size={Math.random() * 0.5 + 0.1}
         />
