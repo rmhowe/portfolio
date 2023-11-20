@@ -9,7 +9,7 @@ export const Shell = ({ children }: { children: React.ReactNode }) => {
   const router = useRouter();
   const meta = {
     title: 'Robbie Howe',
-    description: `Front-end developer, 3D enthusiast, Game creator.`,
+    description: `Technical/VFX Artist`,
     type: 'website',
   };
 
@@ -33,11 +33,9 @@ export const Shell = ({ children }: { children: React.ReactNode }) => {
         <meta name="twitter:title" content={meta.title} />
         <meta name="twitter:description" content={meta.description} />
       </Head>
-      <Header />
-      <main className="flex flex-col justify-center px-8 bg-gray-50 dark:bg-gray-900">
+      <main className="flex flex-col justify-center px-8 mt-20 text-white">
         {children}
       </main>
-      <Footer />
     </div>
   );
 };

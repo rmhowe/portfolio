@@ -1,11 +1,13 @@
 import { NextPage } from 'next';
 import { Shell } from '../../components/Shell';
 import { Picross } from '../../components/picross';
+import { BackLink } from '../../components/BackLink';
 
 const PicrossPage: NextPage = () => {
   return (
     <Shell>
       <div className="w-full max-w-2xl mx-auto">
+        <BackLink to={'/projects'} />
         <h1 className="font-bold text-xl md:text-3xl tracking-tight mb-1 text-black dark:text-white">
           Picross
         </h1>

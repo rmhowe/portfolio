@@ -1,11 +1,14 @@
 import { NextPage } from 'next';
-import { Galaxy } from '../../components/Galaxy';
+import { Galaxy } from '../../components/galaxy/Galaxy';
 import { Shell } from '../../components/Shell';
+import { ArrowLeft, Link } from 'phosphor-react';
+import { BackLink } from '../../components/BackLink';
 
 const ParticleGalaxy: NextPage = () => {
   return (
     <Shell>
       <div className="w-full max-w-2xl mx-auto">
+        <BackLink to={'/projects'} />
         <h1 className="font-bold text-xl md:text-3xl tracking-tight mb-1 text-black dark:text-white">
           Particle Galaxy
         </h1>
