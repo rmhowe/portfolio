@@ -12,8 +12,18 @@ varying vec3 vVertexToCameraDirection;
 void main() {
   // Directional Light
   float NdotL = dot(vNormal, directionalLights[0].direction);
-  float lightIntensity = smoothstep(-0.01, 0.01, NdotL);
+  float numBands = 3.0;
+  float q = ((NdotL + 1.0) / 2.0) * numBands;
+  // float lightIntensity = smoothstep(-0.01, 0.01, NdotL);
+  float lightIntensity = floor(q) / (numBands - 1.0);
   vec3 directionalLight = lightIntensity * directionalLights[0].color;
+
+  // -1 : 0
+  // -0.5 : 0
+  // -0.3 : 0.5
+  // 0 : 0.5
+  // 0.3 : 1
+  // 1 : 1
 
   // Point Light
   float NdotPL = dot(vNormal, vPointLightDirection);

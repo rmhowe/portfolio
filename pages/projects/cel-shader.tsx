@@ -12,8 +12,7 @@ const CelShaderPage: NextPage = () => {
           Cel Shader
         </h1>
         <p className="text-gray-200 mb-4">
-          This is a cel shader I used to prototype a similar shader that was
-          going to be used in Unreal Engine.
+          This is a cel shader alternative to the built-in MeshToonMaterial.
         </p>
         <p className="text-gray-200 mb-10">
           Source code available{' '}
