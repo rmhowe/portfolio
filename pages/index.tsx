@@ -1,7 +1,7 @@
 import { NextPage } from 'next';
 
 import { Shell } from '../components/Shell';
-import { projectList } from './projects';
+import { projectList } from '../data/project-list';
 import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
@@ -57,13 +57,7 @@ const Home: NextPage = () => {
         <h3 className="w-full font-semibold text-3xl tracking-tight mt-12 mb-4">
           Projects
         </h3>
-        <ProjectList list={projectList.filter((project) => project.featured)} />
-        <Link
-          href="/projects"
-          className="flex items-center gap-1 mt-8 text-gray-400 hover:text-gray-200 transition-all"
-        >
-          See all projects <ArrowRight />
-        </Link>
+        <ProjectList list={projectList} />
       </div>
     </Shell>
   );

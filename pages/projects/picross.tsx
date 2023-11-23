@@ -7,7 +7,7 @@ const PicrossPage: NextPage = () => {
   return (
     <Shell>
       <div className="w-full max-w-2xl mx-auto">
-        <BackLink to={'/projects'} />
+        <BackLink />
         <h1 className="font-bold text-xl md:text-3xl tracking-tight mb-1 text-black dark:text-white">
           Picross
         </h1>

@@ -1,10 +1,12 @@
-import { NextPage } from 'next';
-
-import { Shell } from '../../components/Shell';
-import { ProjectList } from '../../components/ProjectList';
-import { BackLink } from '../../components/BackLink';
-
 export const projectList = [
+  {
+    title: 'Bubble Shield',
+    description: 'A sci-fi inspired bubble shield VFX',
+    image: '/static/images/bubble-shield-thumbnail.png',
+    linkTo: 'bubble-shield',
+    gradient: 'from-indigo-500 via-purple-500 to-pink-500',
+    featured: true,
+  },
   {
     title: 'Cel Shader',
     description:
@@ -28,23 +30,7 @@ export const projectList = [
     image: '/static/images/picross-thumbnail.png',
     linkTo: 'picross',
     gradient: 'from-[#a8ff78] to-[#78ffd6]',
-    featured: true,
+    featured: false,
   },
 ];
 export type Project = (typeof projectList)[0];
-
-const Home: NextPage = () => {
-  return (
-    <Shell>
-      <div className="flex flex-col max-w-2xl border-gray-700 mx-auto pb-16 w-full">
-        <BackLink to={'/'} />
-        <h1 className="font-bold text-2xl md:text-4xl tracking-tight my-6">
-          Projects
-        </h1>
-        <ProjectList list={projectList} />
-      </div>
-    </Shell>
-  );
-};
-
-export default Home;

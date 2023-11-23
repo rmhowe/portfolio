@@ -1,9 +1,9 @@
-import { Project } from '../pages/projects';
+import { Project } from '../data/project-list';
 import { ProjectCard } from './ProjectCard';
 
 export const ProjectList = ({ list }: { list: Project[] }) => {
   return (
-    <div className="flex flex-col sm:flex-row gap-6 items-start w-full text-left">
+    <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 w-full text-left">
       {list.map(({ title, description, image, linkTo, gradient }) => (
         <ProjectCard
           title={title}
@@ -11,7 +11,6 @@ export const ProjectList = ({ list }: { list: Project[] }) => {
           image={image}
           linkTo={linkTo}
           gradient={gradient}
-          key={linkTo}
         />
       ))}
     </div>
