@@ -1,5 +1,3 @@
-import cn from 'classnames';
-
 export const ExternalLink = ({
   href,
   children,
@@ -10,7 +8,7 @@ export const ExternalLink = ({
   className?: string;
 }) => (
   <a
-    className={cn('transition', className)}
+    className={className}
     target="_blank"
     rel="noopener noreferrer"
     href={href}

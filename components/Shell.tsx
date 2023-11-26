@@ -33,7 +33,7 @@ export const Shell = ({ children }: { children: React.ReactNode }) => {
         <meta name="twitter:title" content={meta.title} />
         <meta name="twitter:description" content={meta.description} />
       </Head>
-      <main className="flex flex-col justify-center px-8 mt-20 text-white">
+      <main className="flex flex-col justify-center max-w-4xl mx-auto px-8 mt-10 text-white">
         {children}
       </main>
     </div>

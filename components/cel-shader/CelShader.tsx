@@ -6,47 +6,25 @@ import celVertexShader from './cel.vert';
 import celFragmentShader from './cel.frag';
 import { useControls } from 'leva';
 
-function Spheres() {
+function ThreeSphere() {
   const { gl } = useThree();
-  const cubeWidth = 5;
-  const numberOfSpheresPerSide = 5;
-  const sphereRadius = (cubeWidth / numberOfSpheresPerSide) * 0.4;
-  const stepSize = 1.0 / numberOfSpheresPerSide;
   const format = gl.capabilities.isWebGL2
     ? THREE.RedFormat
     : THREE.LuminanceFormat;
-  const geometry = <sphereGeometry args={[sphereRadius, 32, 16]} />;
-
-  const spheres = [];
-  for (
-    let alpha = 0, alphaIndex = 0;
-    alpha <= 1.0;
-    alpha += stepSize, alphaIndex++
-  ) {
-    const colors = new Uint8Array(alphaIndex + 2);
-
-    for (let c = 0; c <= colors.length; c++) {
-      colors[c] = (c / colors.length) * 256;
-    }
-
-    const gradientMap = new THREE.DataTexture(colors, colors.length, 1, format);
-    gradientMap.needsUpdate = true;
-
-    // basic monochromatic energy preservation
-    const diffuseColor = new THREE.Color().setHSL(alpha, 0.5, 0.5);
-    const mesh = (
-      <mesh
-        position={new THREE.Vector3(alpha * cubeWidth - cubeWidth * 0.5, 0, 0)}
-        key={alpha}
-      >
-        {geometry}
-        <meshToonMaterial color={diffuseColor} gradientMap={gradientMap} />
-      </mesh>
-    );
-    spheres.push(mesh);
+  const colors = new Uint8Array(3);
+  for (let c = 0; c <= colors.length; c++) {
+    colors[c] = (c / colors.length) * 256;
   }
+  const gradientMap = new THREE.DataTexture(colors, colors.length, 1, format);
+  gradientMap.needsUpdate = true;
 
-  return <>{spheres.map((sphere) => sphere)}</>;
+  const diffuseColor = new THREE.Color().setHSL(0, 0.5, 0.5);
+  return (
+    <mesh position={[1.5, 0, 0]}>
+      <sphereGeometry args={[1, 64, 64]} />
+      <meshToonMaterial color={diffuseColor} gradientMap={gradientMap} />
+    </mesh>
+  );
 }
 
 function ParticleLight() {
@@ -78,8 +56,8 @@ function MySphere() {
     glossiness: 10,
   });
   return (
-    <mesh position={[0, 2, 0]} castShadow receiveShadow>
-      <sphereGeometry args={[0.5, 64, 64]} />
+    <mesh position={[-1.5, 0, 0]} castShadow receiveShadow>
+      <sphereGeometry args={[1, 64, 64]} />
       <shaderMaterial
         lights
         uniforms={{
@@ -102,7 +80,7 @@ export function CelShader() {
         fov: 75,
         near: 0.1,
         far: 1000,
-        position: [0, 4, 4],
+        position: [0, 0, 6],
         rotation: [1, 1, 0],
       }}
       scene={{ background: new THREE.Color(0x444488) }}
@@ -117,8 +95,8 @@ export function CelShader() {
       <ambientLight color={0xc1c1c1} intensity={3} />
       <OrbitControls enableDamping />
       <ParticleLight />
-      <Spheres />
       <MySphere />
+      <ThreeSphere />
     </Canvas>
   );
 }
