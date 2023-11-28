@@ -37,6 +37,10 @@
     @apply w-full rounded-lg max-h-96 object-cover;
   }
 
+  video {
+    @apply w-full rounded-lg;
+  }
+
   figcaption {
     @apply text-center text-gray-300;
   }

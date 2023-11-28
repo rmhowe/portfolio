@@ -2,9 +2,6 @@ import Head from 'next/head';
 import { useRouter } from 'next/router';
 import React from 'react';
 
-import { Footer } from './Footer';
-import { Header } from './Header';
-
 export const Shell = ({ children }: { children: React.ReactNode }) => {
   const router = useRouter();
   const meta = {
@@ -33,7 +30,7 @@ export const Shell = ({ children }: { children: React.ReactNode }) => {
         <meta name="twitter:title" content={meta.title} />
         <meta name="twitter:description" content={meta.description} />
       </Head>
-      <main className="flex flex-col justify-center max-w-4xl mx-auto px-8 mt-10 text-white">
+      <main className="flex flex-col justify-center max-w-4xl mx-auto px-8 my-10 text-white">
         {children}
       </main>
     </div>
