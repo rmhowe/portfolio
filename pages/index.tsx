@@ -24,7 +24,7 @@ const Home: NextPage = () => {
             href="https://www.artstation.com/robbiehowe9"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-violet-400 transition-all"
+            className="hover:text-rose-400 transition-all"
             title="ArtStation"
           >
             <FontAwesomeIcon icon={faArtstation} className="w-8" />
@@ -49,9 +49,9 @@ const Home: NextPage = () => {
           </a>
         </div>
 
-        <h3 className="w-full font-semibold text-3xl tracking-tight mt-10 mb-4">
+        <h2 className="w-full font-bold text-3xl tracking-tight mt-12 mb-6">
           Projects
-        </h3>
+        </h2>
         <ProjectList list={projectList} />
       </div>
     </Shell>
