@@ -150,23 +150,75 @@ const CharacterTrailPage: NextPage = () => {
             The color curve sampled from screenshots of Cyberpunk Edgerunners.
           </figcaption>
         </figure>
-        <p>Blah blah blah</p>
+        <p>
+          Linear Color Curves in Unreal allow us to easily define a gradient of
+          colours that can be accessed from a material graph. If we map our
+          stencil values to the 0-1 range then we can sample across the range of
+          colours on the curve. The section of material graph below shows the
+          relatively simple logic for grabbing the stencil value, checking if
+          it's in the right range for us (205-255), sampling the colour curve
+          and then blending the output on screen with this color.
+        </p>
 
+        <p>
+          Colour blending itself is a whole other topic, but luckily Unreal
+          provides with a whole heap of{' '}
+          <ExternalLink href="https://docs.unrealengine.com/5.3/en-US/blend-material-functions-in-unreal-engine/">
+            utility functions for blending colours
+          </ExternalLink>
+          . As a result there's a huge amount of creative license here to choose
+          something that looks interesting and gives off the desired effect. I
+          personally went for a more vibrant colour mixing than in the TV series
+          as I thought it looked much more interesting, but it can be easily
+          tweaked.
+        </p>
         <figure>
           <img src="/static/images/character-trail/material-echoes.png" />
           <figcaption>
-            The color curve sampled from screenshots of Cyberpunk Edgerunners.
+            The logic for getting the stencil value and using it to sample the
+            colour curve.
           </figcaption>
         </figure>
+        <p>
+          Because we're using stencil values here, the meshes will be picked up
+          even if they are occluded by something else in the scene. I've left
+          this effect in intentionally as I think it helps to give the player a
+          better sense of where they started and where they've been while using
+          the ability, but you could turn this off by comparing pixel depth to
+          the custom depth texture if you prefer.
+        </p>
 
         <h3>Colouring Everything Else</h3>
-
+        <p>
+          We've now got our echoes the right colour, but there are two more
+          components to the effect. The first is colouring the environment with
+          a green tint, and the second is leaving our player character its
+          original colour. We can achieve this by giving the player character
+          its own stencil value (I've gone with 1 here to simplify the logic but
+          in principle you can use any value and check for it), and then
+          outputting the original colour for this stencil value, with a blended
+          green tint for everything else that doesn't have one of our specified
+          stencil values. I used a different blend function here as I wanted the
+          echoes to stand out more than the environment.
+        </p>
         <figure>
           <img src="/static/images/character-trail/material-screen.png" />
           <figcaption>
-            The color curve sampled from screenshots of Cyberpunk Edgerunners.
+            The logic for tinting the environment but leaving the player
+            character untouched.
           </figcaption>
         </figure>
+        <p>
+          That's it! We now have a trippy effect for when our player slows down
+          time. From a VFX perspective there are some interesting tweaks that
+          can be made here. Firstly I think the early echoes being tinted green
+          makes sense, as if they are somehow linked to the time at which the
+          ability was started. Then to communicate the ending of the effect, we
+          could move the echo colour into a deep red or even black, or what I've
+          done here which is to push the colour towards white and thus closer to
+          the original player character colour, as if time is catching up with
+          them.
+        </p>
       </div>
     </Shell>
   );
