@@ -18,6 +18,14 @@ export type Project = {
 
 export const projectList: Project[] = [
   {
+    title: 'Procedural Bubble Shield',
+    description: 'A procedurally created sci-fi inspired bubble shield VFX.',
+    image: '/static/images/bubble-shield/bubble-shield-thumbnail.png',
+    linkTo: 'bubble-shield',
+    tags: ['Materials', 'Modelling', 'VFX'],
+    logos: ['houdini', 'substance-designer', 'unreal'],
+  },
+  {
     title: 'Character Trail',
     description:
       'A character trail effect inspired by the Sandevistan in Cyberpunk Edgerunners.',
@@ -25,14 +33,6 @@ export const projectList: Project[] = [
     linkTo: 'character-trail',
     tags: ['Materials', 'VFX'],
     logos: ['unreal'],
-  },
-  {
-    title: 'Procedural Bubble Shield',
-    description: 'A procedurally created sci-fi inspired bubble shield VFX.',
-    image: '/static/images/bubble-shield/bubble-shield-thumbnail.png',
-    linkTo: 'bubble-shield',
-    tags: ['Materials', 'Modelling', 'VFX'],
-    logos: ['houdini', 'substance-designer', 'unreal'],
   },
   {
     title: 'Cel Shader',

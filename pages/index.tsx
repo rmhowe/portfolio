@@ -17,7 +17,7 @@ const Home: NextPage = () => {
         <h1 className="w-full font-bold text-4xl tracking-tight mb-1">
           Robbie Howe
         </h1>
-        <h3 className="w-full text-2xl">Technical/VFX Artist</h3>
+        <h3 className="w-full text-2xl">Technical Artist</h3>
 
         <div className="w-full flex justify-center gap-10 mt-10">
           <a
