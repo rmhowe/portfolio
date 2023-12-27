@@ -11,7 +11,7 @@ export const Shell = ({ children }: { children: React.ReactNode }) => {
   };
 
   return (
-    <div className="bg-gray-50 dark:bg-gray-900">
+    <div className="bg-gray-900">
       <Head>
         <title>{meta.title}</title>
         <meta name="robots" content="follow, index" />

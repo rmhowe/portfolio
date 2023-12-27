@@ -11,7 +11,7 @@ const BubbleShieldPage: NextPage = () => {
         <BackLink />
         <PageTitle>Procedural Bubble Shield</PageTitle>
         <figure>
-          <div className="grid grid-cols-2 gap-2">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
             <img src="/static/images/bubble-shield/bubble-shield.png" />
             <video controls poster="/static/videos/bubble-shield-poster.png">
               <source src="/static/videos/bubble-shield.mp4" type="video/mp4" />

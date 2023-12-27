@@ -17,18 +17,13 @@ const Home: NextPage = () => {
         <h1 className="w-full font-bold text-4xl tracking-tight mb-1">
           Robbie Howe
         </h1>
-        <h3 className="w-full text-2xl">Technical Artist</h3>
+        <h3 className="w-full text-gray-300">
+          Front End Developer
+          <br />
+          Graphics Programmer
+        </h3>
 
         <div className="w-full flex justify-center gap-10 mt-10">
-          <a
-            href="https://www.artstation.com/robbiehowe9"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-rose-400 transition-all"
-            title="ArtStation"
-          >
-            <FontAwesomeIcon icon={faArtstation} className="w-8" />
-          </a>
           <a
             href="https://github.com/rmhowe"
             target="_blank"
@@ -46,6 +41,15 @@ const Home: NextPage = () => {
             title="LinkedIn"
           >
             <FontAwesomeIcon icon={faLinkedinIn} className="w-8" />
+          </a>
+          <a
+            href="https://www.artstation.com/robbiehowe9"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-rose-400 transition-all"
+            title="ArtStation"
+          >
+            <FontAwesomeIcon icon={faArtstation} className="w-8" />
           </a>
         </div>
 

@@ -1,6 +1,6 @@
 import { Url } from 'next/dist/shared/lib/router/router';
 import Link from 'next/link';
-import { ArrowLeft } from 'phosphor-react';
+import { ArrowLeft } from '@phosphor-icons/react';
 
 export const BackLink = ({ to }: { to?: Url }) => {
   return (

@@ -3,6 +3,7 @@ import { Shell } from '../../components/Shell';
 import { CelShader } from '../../components/cel-shader/CelShader';
 import { BackLink } from '../../components/BackLink';
 import { PageTitle } from '../../components/PageTitle';
+import { ExternalLink } from '../../components/ExternalLink';
 
 const CelShaderPage: NextPage = () => {
   return (
@@ -24,13 +25,9 @@ const CelShaderPage: NextPage = () => {
         </p>
         <p className="mb-10">
           Source code available{' '}
-          <a
-            className="text-blue-500"
-            href="https://github.com/rmhowe/portfolio/blob/main/components/CelShader.tsx"
-            target="_blank"
-          >
+          <ExternalLink href="https://github.com/rmhowe/portfolio/blob/main/components/cel-shader/CelShader.tsx">
             here
-          </a>
+          </ExternalLink>
           .
         </p>
       </div>

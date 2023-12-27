@@ -1,11 +1,12 @@
-export type Tag = 'Materials' | 'Modelling' | 'Shaders' | 'VFX';
+export type Tag = 'Materials' | 'Modelling' | 'Shaders' | 'VFX' | 'WebGPU';
 
 export type Logo =
   | 'houdini'
   | 'substance-designer'
   | 'threejs'
   | 'typescript'
-  | 'unreal';
+  | 'unreal'
+  | 'webgpu';
 
 export type Project = {
   title: string;
@@ -17,6 +18,23 @@ export type Project = {
 };
 
 export const projectList: Project[] = [
+  {
+    title: 'WebGPU Game of Life',
+    description: "Conway's Game of Life implemented in WebGPU and React.",
+    image: '/static/images/webgpu-game-of-life-thumbnail.png',
+    linkTo: 'webgpu-game-of-life',
+    tags: ['WebGPU'],
+    logos: ['webgpu', 'typescript'],
+  },
+  {
+    title: 'Cel Shader',
+    description:
+      'A cel shader in Three.js used for rapid prototyping and iteration.',
+    image: '/static/images/cel-shader-thumbnail.png',
+    linkTo: 'cel-shader',
+    tags: ['Shaders'],
+    logos: ['threejs', 'typescript'],
+  },
   {
     title: 'Procedural Bubble Shield',
     description: 'A procedurally created sci-fi inspired bubble shield VFX.',
@@ -33,14 +51,5 @@ export const projectList: Project[] = [
     linkTo: 'character-trail',
     tags: ['Materials', 'VFX'],
     logos: ['unreal'],
-  },
-  {
-    title: 'Cel Shader',
-    description:
-      'A cel shader in Three.js used for rapid prototyping and iteration.',
-    image: '/static/images/cel-shader-thumbnail.png',
-    linkTo: 'cel-shader',
-    tags: ['Shaders'],
-    logos: ['threejs', 'typescript', 'unreal'],
   },
 ];

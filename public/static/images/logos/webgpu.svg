@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 768 768" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g id="Triangle_1" transform="matrix(1.12937,0,0,1.12937,-34.8467,41.2982)">
+        <path d="M30.855,98.98L276.005,507.91L521.145,98.98L30.855,98.98Z" style="fill:white;"/>
+    </g>
+    <g id="Triangle_2" transform="matrix(1.12937,0,0,1.12937,-34.8467,41.2982)">
+        <path d="M528.76,103.11L409.98,301.24L647.54,301.24L528.76,103.11Z" style="fill:white;"/>
+    </g>
+    <g id="Triangle_3" transform="matrix(1.12937,0,0,1.12937,-34.8467,41.2982)">
+        <path d="M409.98,309.78L528.76,507.91L647.54,309.78L409.98,309.78Z" style="fill:white;"/>
+    </g>
+    <g id="Triangle_4" transform="matrix(1.12937,0,0,1.12937,-34.8467,41.2982)">
+        <path d="M599.53,204.38L655.126,297.118L710.88,204.38L599.53,204.38Z" style="fill:white;"/>
+    </g>
+    <g id="Triangle_5" transform="matrix(1.12937,0,0,1.12937,-34.8467,41.2982)">
+        <path d="M655.12,103.1L599.52,195.842L710.88,195.842L655.124,103.1L655.12,103.1Z" style="fill:white;"/>
+    </g>
+</svg>

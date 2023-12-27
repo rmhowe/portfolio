@@ -6,6 +6,7 @@ const gradients = [
   'from-violet-500 via-fuchsia-500 to-pink-500',
   'from-pink-500 via-red-500 to-amber-500',
   'from-amber-500 via-lime-500 to-emerald-500',
+  'from-emerald-500 via-purple-500 to-violet-500',
 ];
 
 const tagColors: Record<Tag, string> = {
@@ -13,6 +14,7 @@ const tagColors: Record<Tag, string> = {
   Modelling: 'bg-cyan-600',
   Shaders: 'bg-fuchsia-600',
   VFX: 'bg-violet-600',
+  WebGPU: 'bg-rose-600',
 };
 
 export const ProjectCard = ({

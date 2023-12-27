@@ -5,6 +5,10 @@ module.exports = {
       test: /\.(glsl|vs|fs|vert|frag)$/,
       use: 'ts-shader-loader',
     });
+    config.module.rules.push({
+      test: /\.wgsl$/i,
+      type: 'asset/source',
+    });
     return config;
   },
 };
