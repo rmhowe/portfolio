@@ -10,11 +10,10 @@ const gradients = [
 ];
 
 const tagColors: Record<Tag, string> = {
-  Materials: 'bg-emerald-600',
-  Modelling: 'bg-cyan-600',
+  GPU: 'bg-cyan-600',
   Shaders: 'bg-fuchsia-600',
   VFX: 'bg-violet-600',
-  WebGPU: 'bg-rose-600',
+  Web: 'bg-emerald-600',
 };
 
 export const ProjectCard = ({

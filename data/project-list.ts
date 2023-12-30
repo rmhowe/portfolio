@@ -1,4 +1,4 @@
-export type Tag = 'Materials' | 'Modelling' | 'Shaders' | 'VFX' | 'WebGPU';
+export type Tag = 'GPU' | 'Shaders' | 'VFX' | 'Web';
 
 export type Logo =
   | 'houdini'
@@ -23,7 +23,7 @@ export const projectList: Project[] = [
     description: "Conway's Game of Life implemented in WebGPU and React.",
     image: '/static/images/webgpu-game-of-life-thumbnail.png',
     linkTo: 'webgpu-game-of-life',
-    tags: ['WebGPU'],
+    tags: ['GPU', 'Web'],
     logos: ['webgpu', 'typescript'],
   },
   {
@@ -32,7 +32,7 @@ export const projectList: Project[] = [
       'A cel shader in Three.js used for rapid prototyping and iteration.',
     image: '/static/images/cel-shader-thumbnail.png',
     linkTo: 'cel-shader',
-    tags: ['Shaders'],
+    tags: ['Shaders', 'Web'],
     logos: ['threejs', 'typescript'],
   },
   {
@@ -40,7 +40,7 @@ export const projectList: Project[] = [
     description: 'A procedurally created sci-fi inspired bubble shield VFX.',
     image: '/static/images/bubble-shield/bubble-shield-thumbnail.png',
     linkTo: 'bubble-shield',
-    tags: ['Materials', 'Modelling', 'VFX'],
+    tags: ['Shaders', 'VFX'],
     logos: ['houdini', 'substance-designer', 'unreal'],
   },
   {
@@ -49,7 +49,7 @@ export const projectList: Project[] = [
       'A character trail effect inspired by the Sandevistan in Cyberpunk Edgerunners.',
     image: '/static/images/character-trail/character-trail-thumbnail.png',
     linkTo: 'character-trail',
-    tags: ['Materials', 'VFX'],
+    tags: ['Shaders', 'VFX'],
     logos: ['unreal'],
   },
 ];
