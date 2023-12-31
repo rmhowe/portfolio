@@ -28,7 +28,7 @@ const Home: NextPage = () => {
             href="https://github.com/rmhowe"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-green-400 transition-all"
+            className="text-rose-50 hover:text-gray-300 transition-all"
             title="GitHub"
           >
             <FontAwesomeIcon icon={faGithub} className="w-8" />
@@ -37,19 +37,10 @@ const Home: NextPage = () => {
             href="https://www.linkedin.com/in/robbie-howe-8ba50540/"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-blue-400 transition-all"
+            className="text-rose-50 hover:text-gray-300 transition-all"
             title="LinkedIn"
           >
             <FontAwesomeIcon icon={faLinkedinIn} className="w-8" />
-          </a>
-          <a
-            href="https://www.artstation.com/robbiehowe9"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-rose-400 transition-all"
-            title="ArtStation"
-          >
-            <FontAwesomeIcon icon={faArtstation} className="w-8" />
           </a>
         </div>
 
