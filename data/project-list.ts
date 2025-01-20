@@ -19,6 +19,14 @@ export type Project = {
 
 export const projectList: Project[] = [
   {
+    title: 'Voxel Renderer',
+    description: 'An efficient renderer for large numbers of voxels.',
+    image: '/static/images/voxel-renderer-thumbnail.png',
+    linkTo: 'voxel-renderer',
+    tags: ['Shaders', 'Web'],
+    logos: ['threejs', 'typescript'],
+  },
+  {
     title: 'WebGPU Game of Life',
     description: "Conway's Game of Life implemented in WebGPU and React.",
     image: '/static/images/webgpu-game-of-life-thumbnail.png',

@@ -3,11 +3,7 @@ import { NextPage } from 'next';
 import { Shell } from '../components/Shell';
 import { projectList } from '../data/project-list';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {
-  faGithub,
-  faLinkedinIn,
-  faArtstation,
-} from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import { ProjectList } from '../components/ProjectList';
 
 const Home: NextPage = () => {
