@@ -1,0 +1,18 @@
+---
+import { type Project } from "../data/project-list";
+import ProjectCard from "./ProjectCard.astro";
+
+type Props = {
+  list: Project[];
+};
+
+const { list } = Astro.props;
+---
+
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-6 w-full text-left">
+  {
+    list.map((project, index) => (
+      <ProjectCard {...project} key={project.linkTo} gradient={index} />
+    ))
+  }
+</div>
