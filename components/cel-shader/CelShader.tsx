@@ -1,9 +1,9 @@
 import * as THREE from 'three';
-import { useRef } from 'react';
+import React, { useRef } from 'react';
 import { Canvas, useFrame, useThree } from '@react-three/fiber';
 import { OrbitControls } from '@react-three/drei';
-import celVertexShader from './cel.vert?raw';
-import celFragmentShader from './cel.frag?raw';
+import celVertexShader from './cel.vert';
+import celFragmentShader from './cel.frag';
 import { useControls } from 'leva';
 
 function ThreeSphere() {

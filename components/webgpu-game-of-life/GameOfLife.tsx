@@ -1,7 +1,7 @@
-import renderShader from './render.wgsl?raw';
-import computeShader from './compute.wgsl?raw';
+import renderShader from './render.wgsl';
+import computeShader from './compute.wgsl';
 import { useEffect, useRef, useState } from 'react';
-import { Pause, Play, SkipForward } from 'lucide-react';
+import { Pause, Play, SkipForward } from '@phosphor-icons/react';
 
 const GRID_SIZE = 32;
 
