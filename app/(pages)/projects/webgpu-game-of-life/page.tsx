@@ -1,13 +1,11 @@
-import { NextPage } from 'next';
-import { Shell } from '../../components/Shell';
-import { BackLink } from '../../components/BackLink';
-import { PageTitle } from '../../components/PageTitle';
-import { GameOfLife } from '../../components/webgpu-game-of-life/GameOfLife';
-import { ExternalLink } from '../../components/ExternalLink';
+import { BackLink } from '../../../components/BackLink';
+import { PageTitle } from '../../../components/PageTitle';
+import { GameOfLife } from '../../../components/webgpu-game-of-life/GameOfLife';
+import { ExternalLink } from '../../../components/ExternalLink';
 
-const WebGPUGameOfLifePage: NextPage = () => {
+export default function WebGPUGameOfLifePage() {
   return (
-    <Shell>
+    <>
       <BackLink />
       <PageTitle>WebGPU Game of Life</PageTitle>
       <div>
@@ -36,8 +34,6 @@ const WebGPUGameOfLifePage: NextPage = () => {
       <div className="w-full">
         <GameOfLife />
       </div>
-    </Shell>
+    </>
   );
-};
-
-export default WebGPUGameOfLifePage;
+}

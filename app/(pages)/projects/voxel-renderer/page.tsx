@@ -1,13 +1,11 @@
-import { NextPage } from 'next';
-import { Shell } from '../../components/Shell';
-import { BackLink } from '../../components/BackLink';
-import { PageTitle } from '../../components/PageTitle';
-import { ExternalLink } from '../../components/ExternalLink';
-import { VoxelRenderer } from '../../components/voxel-renderer/VoxelRenderer';
+import { BackLink } from '../../../components/BackLink';
+import { PageTitle } from '../../../components/PageTitle';
+import { ExternalLink } from '../../../components/ExternalLink';
+import { VoxelRenderer } from '../../../components/voxel-renderer/VoxelRenderer';
 
-const VoxelRendererPage: NextPage = () => {
+export default function VoxelRendererPage() {
   return (
-    <Shell>
+    <>
       <BackLink />
       <PageTitle>Voxel Renderer</PageTitle>
       <div className="text-gray-200">
@@ -33,8 +31,6 @@ const VoxelRendererPage: NextPage = () => {
       <div className="w-full" style={{ height: '75vh' }}>
         <VoxelRenderer />
       </div>
-    </Shell>
+    </>
   );
-};
-
-export default VoxelRendererPage;
+}

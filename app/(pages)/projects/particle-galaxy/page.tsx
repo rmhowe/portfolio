@@ -1,12 +1,10 @@
-import { NextPage } from 'next';
-import { Galaxy } from '../../components/galaxy/Galaxy';
-import { Shell } from '../../components/Shell';
-import { BackLink } from '../../components/BackLink';
-import { PageTitle } from '../../components/PageTitle';
+import { Galaxy } from '../../../components/galaxy/Galaxy';
+import { BackLink } from '../../../components/BackLink';
+import { PageTitle } from '../../../components/PageTitle';
 
-const ParticleGalaxy: NextPage = () => {
+export default function ParticleGalaxyPage() {
   return (
-    <Shell>
+    <>
       <BackLink />
       <PageTitle>Particle Galaxy</PageTitle>
       <p className="text-gray-700 dark:text-gray-200 mb-4">
@@ -28,8 +26,6 @@ const ParticleGalaxy: NextPage = () => {
       <div className="w-full" style={{ height: '75vh' }}>
         <Galaxy />
       </div>
-    </Shell>
+    </>
   );
-};
-
-export default ParticleGalaxy;
+}

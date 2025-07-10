@@ -1,13 +1,11 @@
-import { NextPage } from 'next';
-import { Shell } from '../../components/Shell';
-import { CelShader } from '../../components/cel-shader/CelShader';
-import { BackLink } from '../../components/BackLink';
-import { PageTitle } from '../../components/PageTitle';
-import { ExternalLink } from '../../components/ExternalLink';
+import { CelShader } from '../../../components/cel-shader/CelShader';
+import { BackLink } from '../../../components/BackLink';
+import { PageTitle } from '../../../components/PageTitle';
+import { ExternalLink } from '../../../components/ExternalLink';
 
-const CelShaderPage: NextPage = () => {
+export default function CelShaderPage() {
   return (
-    <Shell>
+    <>
       <BackLink />
       <PageTitle>Cel Shader</PageTitle>
       <div className="text-gray-200">
@@ -34,8 +32,6 @@ const CelShaderPage: NextPage = () => {
       <div className="w-full" style={{ height: '75vh' }}>
         <CelShader />
       </div>
-    </Shell>
+    </>
   );
-};
-
-export default CelShaderPage;
+}

@@ -1,4 +1,6 @@
-module.exports = {
+import type { NextConfig } from "next";
+
+const nextConfig: NextConfig = {
   output: 'export',
   webpack: (config) => {
     config.module.rules.push({
@@ -12,3 +14,5 @@ module.exports = {
     return config;
   },
 };
+
+export default nextConfig;
