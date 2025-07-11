@@ -1,3 +1,4 @@
+'use client';
 import * as THREE from 'three';
 import React, { useRef } from 'react';
 import { Canvas, useFrame, useThree } from '@react-three/fiber';
@@ -8,9 +9,7 @@ import { useControls } from 'leva';
 
 function ThreeSphere() {
   const { gl } = useThree();
-  const format = gl.capabilities.isWebGL2
-    ? THREE.RedFormat
-    : THREE.LuminanceFormat;
+  const format = gl.capabilities.isWebGL2 ? THREE.RedFormat : THREE.AlphaFormat;
   const colors = new Uint8Array(3);
   for (let c = 0; c <= colors.length; c++) {
     colors[c] = (c / colors.length) * 256;

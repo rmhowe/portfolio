@@ -1,9 +1,10 @@
+'use client';
 import React, { useState, useEffect } from 'react';
 import { useTheme } from 'next-themes';
 import NextLink from 'next/link';
 import cn from 'classnames';
 import { useRouter } from 'next/router';
-import { Sun, Moon } from '@phosphor-icons/react';
+import { Sun, Moon } from '@phosphor-icons/react/ssr';
 
 const NavItem = ({ href, text }: { href: string; text: string }) => {
   const router = useRouter();

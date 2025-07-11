@@ -1,3 +1,4 @@
+'use client';
 import renderShader from './render.wgsl';
 import computeShader from './compute.wgsl';
 import { useEffect, useRef, useState } from 'react';

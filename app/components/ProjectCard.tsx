@@ -32,7 +32,7 @@ export const ProjectCard = ({
     <Link
       href={`/projects/${linkTo}`}
       className={cn(
-        'transform hover:scale-[1.01] transition-all w-full rounded-lg text-gray-100 hover:text-gray-100 bg-gradient-to-r',
+        'transform hover:scale-[1.01] transition-all w-full rounded-lg text-gray-100 hover:text-gray-100 bg-linear-to-r',
         gradients[gradient]
       )}
     >
