@@ -5,7 +5,10 @@ const shaderFileConfig = {
   as: '*.js',
 };
 const nextConfig: NextConfig = {
-  output: 'export',
+  images: {
+    loader: 'custom',
+    loaderFile: './app/utils/cloudflareImageLoader.ts',
+  },
   webpack: (config) => {
     config.module.rules.push({
       test: /\.(vert|frag|glsl|wgsl)$/,
