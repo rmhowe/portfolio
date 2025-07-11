@@ -1,6 +1,15 @@
 import { Galaxy } from '../../../components/galaxy/Galaxy';
 import { BackLink } from '../../../components/BackLink';
 import { PageTitle } from '../../../components/PageTitle';
+import { generateProjectMetadata } from '../../../utils/metadata';
+
+export const metadata = generateProjectMetadata({
+  title: 'Particle Galaxy',
+  description: 'An interactive 3D particle system simulating galaxy formation using Three.js and WebGL.',
+  image: '/static/images/particle-galaxy-thumbnail.png',
+  slug: 'particle-galaxy',
+  tags: ['Shaders', 'Web', 'Three.js', 'TypeScript'],
+});
 
 export default function ParticleGalaxyPage() {
   return (

@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import cn from 'classnames';
 import { Project, Tag } from '../data/project-list';
 
@@ -38,7 +39,11 @@ export const ProjectCard = ({
     >
       <div className="flex flex-col w-full h-full p-1">
         <div className="relative rounded-t-lg bg-gray-900 w-full flex-none">
-          <img src={image} className="rounded-b-none object-cover h-full" />
+          <Image
+            src={image}
+            alt={title}
+            className="rounded-b-none object-cover h-full w-full"
+          />
           <div className="flex gap-1.5 absolute bottom-1 right-1">
             {logos.map((logo) => (
               <img src={`/static/images/logos/${logo}.svg`} className="w-8" />
@@ -50,7 +55,9 @@ export const ProjectCard = ({
           <p className="grow w-full m-0 mb-2">{description}</p>
           <div className="flex flex-wrap gap-1">
             {tags.map((tag) => (
-              <div className={`rounded-lg ${tagColors[tag]} px-1.5`}>{tag}</div>
+              <div key={tag} className={`rounded-lg ${tagColors[tag]} px-1.5`}>
+                {tag}
+              </div>
             ))}
           </div>
         </div>

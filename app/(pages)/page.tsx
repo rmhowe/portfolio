@@ -1,8 +1,13 @@
-import { Shell } from '../components/Shell';
 import { projectList } from '../data/project-list';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import { ProjectList } from '../components/ProjectList';
+import { generateMetadata, siteConfig } from '../utils/metadata';
+
+export const metadata = generateMetadata(
+  siteConfig.name,
+  siteConfig.description
+);
 
 export default function Home() {
   return (

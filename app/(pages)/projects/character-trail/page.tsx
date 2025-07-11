@@ -1,6 +1,26 @@
+import Image from 'next/image';
 import { BackLink } from '../../../components/BackLink';
 import { ExternalLink } from '../../../components/ExternalLink';
 import { PageTitle } from '../../../components/PageTitle';
+import { generateProjectMetadata } from '../../../utils/metadata';
+
+// Static image imports
+import characterTrailImage from '../../../assets/images/character-trail/character-trail.png';
+import edgerunners1Image from '../../../assets/images/character-trail/edgerunners-1.png';
+import edgerunners2Image from '../../../assets/images/character-trail/edgerunners-2.png';
+import echoCreationImage from '../../../assets/images/character-trail/echo-creation.png';
+import echoBeginPlayImage from '../../../assets/images/character-trail/echo-begin-play.png';
+import colorCurveImage from '../../../assets/images/character-trail/color-curve.png';
+import materialEchoesImage from '../../../assets/images/character-trail/material-echoes.png';
+import materialScreenImage from '../../../assets/images/character-trail/material-screen.png';
+
+export const metadata = generateProjectMetadata({
+  title: 'Character Trail (Sandevistan)',
+  description: 'A character trail effect inspired by the Sandevistan in Cyberpunk Edgerunners, created in Unreal Engine.',
+  image: '/static/images/character-trail/character-trail-thumbnail.png',
+  slug: 'character-trail',
+  tags: ['Shaders', 'VFX', 'Unreal Engine'],
+});
 
 export default function CharacterTrailPage() {
   return (
@@ -8,7 +28,7 @@ export default function CharacterTrailPage() {
       <BackLink />
       <PageTitle>Character Trail (Sandevistan)</PageTitle>
       <figure>
-        <img src="/static/images/character-trail/character-trail.png" />
+        <Image src={characterTrailImage} alt="The final character trail effect" />
         <figcaption>The final character trail effect.</figcaption>
       </figure>
       <figure>
@@ -30,7 +50,7 @@ export default function CharacterTrailPage() {
         themself as seen in the image below.
       </p>
       <figure>
-        <img src="/static/images/character-trail/edgerunners-1.png" />
+        <Image src={edgerunners1Image} alt="David using the Sandevistan and leaving echoes behind in Cyberpunk Edgerunners" />
         <figcaption>
           David using the Sandevistan and leaving "echoes" behind in Cyberpunk
           Edgerunners.
@@ -46,7 +66,7 @@ export default function CharacterTrailPage() {
         Unreal Engine.
       </p>
       <figure>
-        <img src="/static/images/character-trail/edgerunners-2.png" />
+        <Image src={edgerunners2Image} alt="The array of colours used for the echoes" />
         <figcaption>The array of colours used for the "echoes".</figcaption>
       </figure>
       <h2>Implementation</h2>
@@ -79,7 +99,7 @@ export default function CharacterTrailPage() {
 
       <h3>Creating the "Echoes"</h3>
       <figure>
-        <img src="/static/images/character-trail/echo-creation.png" />
+        <Image src={echoCreationImage} alt="The blueprint logic for echo creation and destruction" />
         <figcaption>
           The blueprint logic for echo creation and destruction.
         </figcaption>
@@ -102,7 +122,7 @@ export default function CharacterTrailPage() {
         at the point at which it's created.
       </p>
       <figure>
-        <img src="/static/images/character-trail/echo-begin-play.png" />
+        <Image src={echoBeginPlayImage} alt="The blueprint logic for the echo itself once it has been created" />
         <figcaption>
           The blueprint logic for the echo itself once it has been created.
         </figcaption>
@@ -141,7 +161,7 @@ export default function CharacterTrailPage() {
         colours? Enter Linear Color Curves!
       </p>
       <figure>
-        <img src="/static/images/character-trail/color-curve.png" />
+        <Image src={colorCurveImage} alt="The color curve sampled from screenshots of Cyberpunk Edgerunners" />
         <figcaption>
           The color curve sampled from screenshots of Cyberpunk Edgerunners.
         </figcaption>
@@ -169,7 +189,7 @@ export default function CharacterTrailPage() {
         tweaked.
       </p>
       <figure>
-        <img src="/static/images/character-trail/material-echoes.png" />
+        <Image src={materialEchoesImage} alt="The logic for getting the stencil value and using it to sample the colour curve" />
         <figcaption>
           The logic for getting the stencil value and using it to sample the
           colour curve.
@@ -198,7 +218,7 @@ export default function CharacterTrailPage() {
         stand out more than the environment.
       </p>
       <figure>
-        <img src="/static/images/character-trail/material-screen.png" />
+        <Image src={materialScreenImage} alt="The logic for tinting the environment but leaving the player character untouched" />
         <figcaption>
           The logic for tinting the environment but leaving the player character
           untouched.

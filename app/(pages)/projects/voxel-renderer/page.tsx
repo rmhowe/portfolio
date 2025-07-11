@@ -2,6 +2,15 @@ import { BackLink } from '../../../components/BackLink';
 import { PageTitle } from '../../../components/PageTitle';
 import { ExternalLink } from '../../../components/ExternalLink';
 import { VoxelRenderer } from '../../../components/voxel-renderer/VoxelRenderer';
+import { generateProjectMetadata } from '../../../utils/metadata';
+
+export const metadata = generateProjectMetadata({
+  title: 'Voxel Renderer',
+  description: 'An efficient renderer for large numbers of voxels using Three.js and instanced rendering techniques.',
+  image: '/static/images/voxel-renderer-thumbnail.png',
+  slug: 'voxel-renderer',
+  tags: ['Shaders', 'Web', 'Three.js', 'TypeScript'],
+});
 
 export default function VoxelRendererPage() {
   return (

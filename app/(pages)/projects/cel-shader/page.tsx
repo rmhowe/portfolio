@@ -2,6 +2,15 @@ import { CelShader } from '../../../components/cel-shader/CelShader';
 import { BackLink } from '../../../components/BackLink';
 import { PageTitle } from '../../../components/PageTitle';
 import { ExternalLink } from '../../../components/ExternalLink';
+import { generateProjectMetadata } from '../../../utils/metadata';
+
+export const metadata = generateProjectMetadata({
+  title: 'Cel Shader',
+  description: 'A cel shader in Three.js used for rapid prototyping and iteration of toon-style rendering effects.',
+  image: '/static/images/cel-shader-thumbnail.png',
+  slug: 'cel-shader',
+  tags: ['Shaders', 'Web', 'Three.js', 'TypeScript'],
+});
 
 export default function CelShaderPage() {
   return (

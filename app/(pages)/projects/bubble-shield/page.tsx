@@ -1,6 +1,29 @@
+import Image from 'next/image';
 import { BackLink } from '../../../components/BackLink';
 import { ExternalLink } from '../../../components/ExternalLink';
 import { PageTitle } from '../../../components/PageTitle';
+import { generateProjectMetadata } from '../../../utils/metadata';
+
+// Static image imports
+import bubbleShieldImage from '../../../assets/images/bubble-shield/bubble-shield.png';
+import haloBubbleShieldImage from '../../../assets/images/bubble-shield/halo-bubble-shield.jpg';
+import haloBubbleShieldIngameImage from '../../../assets/images/bubble-shield/halo-bubble-shield-ingame.jpg';
+import bubbleBlenderUvImage from '../../../assets/images/bubble-shield/bubble-blender-uv.png';
+import bubbleHoudiniUvImage from '../../../assets/images/bubble-shield/bubble-houdini-uv.png';
+import bubbleShieldTextureImage from '../../../assets/images/bubble-shield/bubble-shield-texture.png';
+import hexsphereRefractionImage from '../../../assets/images/bubble-shield/hexsphere-refraction.png';
+import hexsphereNormalImage from '../../../assets/images/bubble-shield/hexsphere-normal.png';
+import material1Image from '../../../assets/images/bubble-shield/material-1.png';
+import material2Image from '../../../assets/images/bubble-shield/material-2.png';
+import materialAnimationImage from '../../../assets/images/bubble-shield/material-animation.png';
+
+export const metadata = generateProjectMetadata({
+  title: 'Procedural Bubble Shield',
+  description: 'A procedurally created sci-fi inspired bubble shield VFX built with Houdini, Substance Designer, and Unreal Engine.',
+  image: '/static/images/bubble-shield/bubble-shield-thumbnail.png',
+  slug: 'bubble-shield',
+  tags: ['Shaders', 'VFX', 'Houdini', 'Substance Designer', 'Unreal Engine'],
+});
 
 export default function BubbleShieldPage() {
   return (
@@ -9,7 +32,7 @@ export default function BubbleShieldPage() {
       <PageTitle>Procedural Bubble Shield</PageTitle>
       <figure>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <img src="/static/images/bubble-shield/bubble-shield.png" />
+          <Image src={bubbleShieldImage} alt="Procedural bubble shield effect" />
           <video controls poster="/static/videos/bubble-shield-poster.png">
             <source src="/static/videos/bubble-shield.mp4" type="video/mp4" />
           </video>
@@ -34,11 +57,11 @@ export default function BubbleShieldPage() {
       </p>
       <div className="flex flex-col sm:flex-row gap-2">
         <figure className="my-0">
-          <img src="/static/images/bubble-shield/halo-bubble-shield.jpg" />
+          <Image src={haloBubbleShieldImage} alt="The original bubble shield from the trailer" />
           <figcaption>The original bubble shield from the trailer.</figcaption>
         </figure>
         <figure className="my-0">
-          <img src="/static/images/bubble-shield/halo-bubble-shield-ingame.jpg" />
+          <Image src={haloBubbleShieldIngameImage} alt="The eventual in-game appearance" />
           <figcaption>The eventual in-game appearance.</figcaption>
         </figure>
       </div>
@@ -71,7 +94,7 @@ export default function BubbleShieldPage() {
         will end up drawing out the shape of a hexagon (see the example below).
       </p>
       <figure>
-        <img src="/static/images/bubble-shield/bubble-blender-uv.png" />
+        <Image src={bubbleBlenderUvImage} alt="A geodesic dome with poke faces applied, and all triangles UV mapped within Blender" />
         <figcaption>
           A geodesic dome with poke faces applied, and all triangles UV mapped
           within Blender.
@@ -123,7 +146,7 @@ export default function BubbleShieldPage() {
         allowing tweaking of parameters such as hexagon size directly in-engine.
       </p>
       <figure>
-        <img src="/static/images/bubble-shield/bubble-houdini-uv.png" />
+        <Image src={bubbleHoudiniUvImage} alt="The same resulting mesh and UV mapping but done procedurally in Houdini" />
         <figcaption>
           The same resulting mesh and UV mapping but done procedurally in
           Houdini.
@@ -141,12 +164,13 @@ export default function BubbleShieldPage() {
       </p>
       <figure>
         <div className="grid grid-cols-2 gap-2">
-          <img
+          <Image
             className="col-span-full"
-            src="/static/images/bubble-shield/bubble-shield-texture.png"
+            src={bubbleShieldTextureImage}
+            alt="The Substance graph with resulting refraction and normal maps"
           />
-          <img src="/static/images/bubble-shield/hexsphere-refraction.png" />
-          <img src="/static/images/bubble-shield/hexsphere-normal.png" />
+          <Image src={hexsphereRefractionImage} alt="Refraction map" />
+          <Image src={hexsphereNormalImage} alt="Normal map" />
         </div>
         <figcaption>
           The Substance graph with resulting refraction and normal maps.
@@ -170,8 +194,8 @@ export default function BubbleShieldPage() {
       </p>
       <figure>
         <div className="flex flex-col gap-2">
-          <img src="/static/images/bubble-shield/material-1.png" />
-          <img src="/static/images/bubble-shield/material-2.png" />
+          <Image src={material1Image} alt="Material setup part 1" />
+          <Image src={material2Image} alt="Material setup part 2" />
         </div>
         <figcaption>
           The material setup for emission, opacity, normal, and refraction.
@@ -196,7 +220,7 @@ export default function BubbleShieldPage() {
         tried to keep it as neat as possible.
       </p>
       <figure>
-        <img src="/static/images/bubble-shield/material-animation.png" />
+        <Image src={materialAnimationImage} alt="The dissolve animation section of the material" />
         <figcaption>The dissolve animation section of the material.</figcaption>
       </figure>
       <p>
