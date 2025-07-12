@@ -2,6 +2,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import cn from 'classnames';
 import { Project, Tag } from '../data/project-list';
+import { containerMaxWidth } from '../utils/sizes';
 
 const gradients = [
   'from-violet-500 via-fuchsia-500 to-pink-500',
@@ -43,6 +44,7 @@ export const ProjectCard = ({
             src={image}
             alt={title}
             className="rounded-b-none object-cover h-full w-full"
+            sizes={`(max-width: ${containerMaxWidth / 3}px) 100vw, ${containerMaxWidth / 3}px`}
           />
           <div className="flex gap-1.5 absolute bottom-1 right-1">
             {logos.map((logo) => (

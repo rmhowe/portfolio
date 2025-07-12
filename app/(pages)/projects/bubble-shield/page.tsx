@@ -16,10 +16,12 @@ import hexsphereNormalImage from '../../../assets/images/bubble-shield/hexsphere
 import material1Image from '../../../assets/images/bubble-shield/material-1.png';
 import material2Image from '../../../assets/images/bubble-shield/material-2.png';
 import materialAnimationImage from '../../../assets/images/bubble-shield/material-animation.png';
+import { containerMaxWidth } from '@/app/utils/sizes';
 
 export const metadata = generateProjectMetadata({
   title: 'Procedural Bubble Shield',
-  description: 'A procedurally created sci-fi inspired bubble shield VFX built with Houdini, Substance Designer, and Unreal Engine.',
+  description:
+    'A procedurally created sci-fi inspired bubble shield VFX built with Houdini, Substance Designer, and Unreal Engine.',
   image: '/static/images/bubble-shield/bubble-shield-thumbnail.png',
   slug: 'bubble-shield',
   tags: ['Shaders', 'VFX', 'Houdini', 'Substance Designer', 'Unreal Engine'],
@@ -32,7 +34,11 @@ export default function BubbleShieldPage() {
       <PageTitle>Procedural Bubble Shield</PageTitle>
       <figure>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <Image src={bubbleShieldImage} alt="Procedural bubble shield effect" />
+          <Image
+            src={bubbleShieldImage}
+            alt="Procedural bubble shield effect"
+            sizes={`(max-width: ${containerMaxWidth / 2}px) 100vw, ${containerMaxWidth / 2}px`}
+          />
           <video controls poster="/static/videos/bubble-shield-poster.png">
             <source src="/static/videos/bubble-shield.mp4" type="video/mp4" />
           </video>
@@ -57,11 +63,19 @@ export default function BubbleShieldPage() {
       </p>
       <div className="flex flex-col sm:flex-row gap-2">
         <figure className="my-0">
-          <Image src={haloBubbleShieldImage} alt="The original bubble shield from the trailer" />
+          <Image
+            src={haloBubbleShieldImage}
+            alt="The original bubble shield from the trailer"
+            sizes={`(max-width: ${containerMaxWidth / 2}px) 100vw, ${containerMaxWidth / 2}px`}
+          />
           <figcaption>The original bubble shield from the trailer.</figcaption>
         </figure>
         <figure className="my-0">
-          <Image src={haloBubbleShieldIngameImage} alt="The eventual in-game appearance" />
+          <Image
+            src={haloBubbleShieldIngameImage}
+            alt="The eventual in-game appearance"
+            sizes={`(max-width: ${containerMaxWidth / 2}px) 100vw, ${containerMaxWidth / 2}px`}
+          />
           <figcaption>The eventual in-game appearance.</figcaption>
         </figure>
       </div>
@@ -94,7 +108,11 @@ export default function BubbleShieldPage() {
         will end up drawing out the shape of a hexagon (see the example below).
       </p>
       <figure>
-        <Image src={bubbleBlenderUvImage} alt="A geodesic dome with poke faces applied, and all triangles UV mapped within Blender" />
+        <Image
+          src={bubbleBlenderUvImage}
+          alt="A geodesic dome with poke faces applied, and all triangles UV mapped within Blender"
+          sizes={`(max-width: ${containerMaxWidth}px) 100vw, ${containerMaxWidth}px`}
+        />
         <figcaption>
           A geodesic dome with poke faces applied, and all triangles UV mapped
           within Blender.
@@ -146,7 +164,11 @@ export default function BubbleShieldPage() {
         allowing tweaking of parameters such as hexagon size directly in-engine.
       </p>
       <figure>
-        <Image src={bubbleHoudiniUvImage} alt="The same resulting mesh and UV mapping but done procedurally in Houdini" />
+        <Image
+          src={bubbleHoudiniUvImage}
+          alt="The same resulting mesh and UV mapping but done procedurally in Houdini"
+          sizes={`(max-width: ${containerMaxWidth}px) 100vw, ${containerMaxWidth}px`}
+        />
         <figcaption>
           The same resulting mesh and UV mapping but done procedurally in
           Houdini.
@@ -168,9 +190,18 @@ export default function BubbleShieldPage() {
             className="col-span-full"
             src={bubbleShieldTextureImage}
             alt="The Substance graph with resulting refraction and normal maps"
+            sizes={`(max-width: ${containerMaxWidth}px) 100vw, ${containerMaxWidth}px`}
           />
-          <Image src={hexsphereRefractionImage} alt="Refraction map" />
-          <Image src={hexsphereNormalImage} alt="Normal map" />
+          <Image
+            src={hexsphereRefractionImage}
+            alt="Refraction map"
+            sizes={`(max-width: ${containerMaxWidth / 2}px) 100vw, ${containerMaxWidth / 2}px`}
+          />
+          <Image
+            src={hexsphereNormalImage}
+            alt="Normal map"
+            sizes={`(max-width: ${containerMaxWidth / 2}px) 100vw, ${containerMaxWidth / 2}px`}
+          />
         </div>
         <figcaption>
           The Substance graph with resulting refraction and normal maps.
@@ -194,8 +225,16 @@ export default function BubbleShieldPage() {
       </p>
       <figure>
         <div className="flex flex-col gap-2">
-          <Image src={material1Image} alt="Material setup part 1" />
-          <Image src={material2Image} alt="Material setup part 2" />
+          <Image
+            src={material1Image}
+            alt="Material setup part 1"
+            sizes={`(max-width: ${containerMaxWidth / 2}px) 100vw, ${containerMaxWidth / 2}px`}
+          />
+          <Image
+            src={material2Image}
+            alt="Material setup part 2"
+            sizes={`(max-width: ${containerMaxWidth / 2}px) 100vw, ${containerMaxWidth / 2}px`}
+          />
         </div>
         <figcaption>
           The material setup for emission, opacity, normal, and refraction.
@@ -220,7 +259,11 @@ export default function BubbleShieldPage() {
         tried to keep it as neat as possible.
       </p>
       <figure>
-        <Image src={materialAnimationImage} alt="The dissolve animation section of the material" />
+        <Image
+          src={materialAnimationImage}
+          alt="The dissolve animation section of the material"
+          sizes={`(max-width: ${containerMaxWidth}px) 100vw, ${containerMaxWidth}px`}
+        />
         <figcaption>The dissolve animation section of the material.</figcaption>
       </figure>
       <p>

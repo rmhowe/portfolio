@@ -13,10 +13,12 @@ import echoBeginPlayImage from '../../../assets/images/character-trail/echo-begi
 import colorCurveImage from '../../../assets/images/character-trail/color-curve.png';
 import materialEchoesImage from '../../../assets/images/character-trail/material-echoes.png';
 import materialScreenImage from '../../../assets/images/character-trail/material-screen.png';
+import { containerMaxWidth } from '@/app/utils/sizes';
 
 export const metadata = generateProjectMetadata({
   title: 'Character Trail (Sandevistan)',
-  description: 'A character trail effect inspired by the Sandevistan in Cyberpunk Edgerunners, created in Unreal Engine.',
+  description:
+    'A character trail effect inspired by the Sandevistan in Cyberpunk Edgerunners, created in Unreal Engine.',
   image: '/static/images/character-trail/character-trail-thumbnail.png',
   slug: 'character-trail',
   tags: ['Shaders', 'VFX', 'Unreal Engine'],
@@ -28,7 +30,11 @@ export default function CharacterTrailPage() {
       <BackLink />
       <PageTitle>Character Trail (Sandevistan)</PageTitle>
       <figure>
-        <Image src={characterTrailImage} alt="The final character trail effect" />
+        <Image
+          src={characterTrailImage}
+          alt="The final character trail effect"
+          sizes={`(max-width: ${containerMaxWidth}px) 100vw, ${containerMaxWidth}px`}
+        />
         <figcaption>The final character trail effect.</figcaption>
       </figure>
       <figure>
@@ -50,7 +56,11 @@ export default function CharacterTrailPage() {
         themself as seen in the image below.
       </p>
       <figure>
-        <Image src={edgerunners1Image} alt="David using the Sandevistan and leaving echoes behind in Cyberpunk Edgerunners" />
+        <Image
+          src={edgerunners1Image}
+          alt="David using the Sandevistan and leaving echoes behind in Cyberpunk Edgerunners"
+          sizes={`(max-width: ${containerMaxWidth}px) 100vw, ${containerMaxWidth}px`}
+        />
         <figcaption>
           David using the Sandevistan and leaving "echoes" behind in Cyberpunk
           Edgerunners.
@@ -66,7 +76,11 @@ export default function CharacterTrailPage() {
         Unreal Engine.
       </p>
       <figure>
-        <Image src={edgerunners2Image} alt="The array of colours used for the echoes" />
+        <Image
+          src={edgerunners2Image}
+          alt="The array of colours used for the echoes"
+          sizes={`(max-width: ${containerMaxWidth}px) 100vw, ${containerMaxWidth}px`}
+        />
         <figcaption>The array of colours used for the "echoes".</figcaption>
       </figure>
       <h2>Implementation</h2>
@@ -99,7 +113,11 @@ export default function CharacterTrailPage() {
 
       <h3>Creating the "Echoes"</h3>
       <figure>
-        <Image src={echoCreationImage} alt="The blueprint logic for echo creation and destruction" />
+        <Image
+          src={echoCreationImage}
+          alt="The blueprint logic for echo creation and destruction"
+          sizes={`(max-width: ${containerMaxWidth}px) 100vw, ${containerMaxWidth}px`}
+        />
         <figcaption>
           The blueprint logic for echo creation and destruction.
         </figcaption>
@@ -122,7 +140,11 @@ export default function CharacterTrailPage() {
         at the point at which it's created.
       </p>
       <figure>
-        <Image src={echoBeginPlayImage} alt="The blueprint logic for the echo itself once it has been created" />
+        <Image
+          src={echoBeginPlayImage}
+          alt="The blueprint logic for the echo itself once it has been created"
+          sizes={`(max-width: ${containerMaxWidth}px) 100vw, ${containerMaxWidth}px`}
+        />
         <figcaption>
           The blueprint logic for the echo itself once it has been created.
         </figcaption>
@@ -161,7 +183,11 @@ export default function CharacterTrailPage() {
         colours? Enter Linear Color Curves!
       </p>
       <figure>
-        <Image src={colorCurveImage} alt="The color curve sampled from screenshots of Cyberpunk Edgerunners" />
+        <Image
+          src={colorCurveImage}
+          alt="The color curve sampled from screenshots of Cyberpunk Edgerunners"
+          sizes={`(max-width: ${containerMaxWidth}px) 100vw, ${containerMaxWidth}px`}
+        />
         <figcaption>
           The color curve sampled from screenshots of Cyberpunk Edgerunners.
         </figcaption>
@@ -189,7 +215,11 @@ export default function CharacterTrailPage() {
         tweaked.
       </p>
       <figure>
-        <Image src={materialEchoesImage} alt="The logic for getting the stencil value and using it to sample the colour curve" />
+        <Image
+          src={materialEchoesImage}
+          alt="The logic for getting the stencil value and using it to sample the colour curve"
+          sizes={`(max-width: ${containerMaxWidth}px) 100vw, ${containerMaxWidth}px`}
+        />
         <figcaption>
           The logic for getting the stencil value and using it to sample the
           colour curve.
@@ -218,7 +248,11 @@ export default function CharacterTrailPage() {
         stand out more than the environment.
       </p>
       <figure>
-        <Image src={materialScreenImage} alt="The logic for tinting the environment but leaving the player character untouched" />
+        <Image
+          src={materialScreenImage}
+          alt="The logic for tinting the environment but leaving the player character untouched"
+          sizes={`(max-width: ${containerMaxWidth}px) 100vw, ${containerMaxWidth}px`}
+        />
         <figcaption>
           The logic for tinting the environment but leaving the player character
           untouched.
