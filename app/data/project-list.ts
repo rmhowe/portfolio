@@ -2,8 +2,9 @@ import { StaticImageData } from 'next/image';
 import BubbleShieldThumb from '../assets/images/bubble-shield-thumbnail.png';
 import CelShaderThumb from '../assets/images/cel-shader-thumbnail.png';
 import CharacterTrailThumb from '../assets/images/character-trail-thumbnail.png';
-import VoxelThumb from '../assets/images/voxel-renderer-thumbnail.png';
 import GameOfLifeThumb from '../assets/images/webgpu-game-of-life-thumbnail.png';
+import VoxelThumb from '../assets/images/voxel-renderer-thumbnail.png';
+import FlowFieldWebGLThumb from '../assets/images/flow-field-webgl-thumbnail.png';
 
 export type Tag = 'GPU' | 'Shaders' | 'VFX' | 'Web';
 
@@ -25,6 +26,15 @@ export type Project = {
 };
 
 export const projectList: Project[] = [
+  {
+    title: 'Flow Field WebGL',
+    description:
+      'A GPGPU implementation of flow field particle movement in WebGL.',
+    image: FlowFieldWebGLThumb,
+    linkTo: 'flow-field-webgl',
+    tags: ['Shaders', 'Web'],
+    logos: ['threejs', 'typescript'],
+  },
   {
     title: 'Voxel Renderer',
     description: 'An efficient renderer for large numbers of voxels.',

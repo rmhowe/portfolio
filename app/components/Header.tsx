@@ -1,10 +1,8 @@
 'use client';
-import React, { useState, useEffect } from 'react';
-import { useTheme } from 'next-themes';
+import React from 'react';
 import NextLink from 'next/link';
 import cn from 'classnames';
 import { useRouter } from 'next/router';
-import { Sun, Moon } from '@phosphor-icons/react/ssr';
 
 const NavItem = ({ href, text }: { href: string; text: string }) => {
   const router = useRouter();
@@ -27,9 +25,6 @@ const NavItem = ({ href, text }: { href: string; text: string }) => {
 };
 
 export const Header = () => {
-  const [mounted, setMounted] = useState(false);
-  const { resolvedTheme, setTheme } = useTheme();
-  useEffect(() => setMounted(true), []);
   return (
     <div className="flex flex-col justify-center px-8">
       <nav className="flex items-center justify-between w-full relative max-w-2xl border-gray-200 dark:border-gray-700 mx-auto pt-8 pb-8 sm:pb-16  text-gray-900 bg-gray-50  dark:bg-gray-900 bg-opacity-60 dark:text-gray-100">
@@ -38,15 +33,6 @@ export const Header = () => {
           <NavItem href="/projects" text="Projects" />
           <NavItem href="/cv" text="CV" />
         </div>
-        <button
-          aria-label="Toggle Dark Mode"
-          type="button"
-          className="w-9 h-9 bg-gray-200 rounded-lg dark:bg-gray-600 flex items-center justify-center  hover:ring-2 ring-gray-300  transition-all"
-          onClick={() => setTheme(resolvedTheme === 'dark' ? 'light' : 'dark')}
-        >
-          {mounted && resolvedTheme === 'dark' && <Sun size={20} />}
-          {mounted && resolvedTheme === 'light' && <Moon size={20} />}
-        </button>
       </nav>
     </div>
   );

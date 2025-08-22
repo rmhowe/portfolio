@@ -10,6 +10,7 @@ const gradients = [
   'from-amber-500 via-lime-500 to-emerald-500',
   'from-emerald-500 via-purple-500 to-violet-500',
   'from-orange-500 via-green-500 to-teal-500',
+  'from-teal-500 via-purple-500 to-cyan-500',
 ];
 
 const tagColors: Record<Tag, string> = {
@@ -48,7 +49,11 @@ export const ProjectCard = ({
           />
           <div className="flex gap-1.5 absolute bottom-1 right-1">
             {logos.map((logo) => (
-              <img src={`/static/images/logos/${logo}.svg`} className="w-8" />
+              <img
+                key={logo}
+                src={`/static/images/logos/${logo}.svg`}
+                className="w-8"
+              />
             ))}
           </div>
         </div>
