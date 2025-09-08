@@ -17,6 +17,9 @@ export default function FlowFieldWebGLPage() {
     <>
       <BackLink />
       <PageTitle>Flow Field WebGL</PageTitle>
+      <div className="w-full" style={{ height: '60vh' }}>
+        <FlowFieldNoSSR />
+      </div>
       <div className="text-gray-200">
         <p className="mb-4">
           This is a General Purpose GPU (GPGPU) implementation of a flow field
@@ -56,9 +59,6 @@ export default function FlowFieldWebGLPage() {
           </ExternalLink>
           .
         </p>
-      </div>
-      <div className="w-full" style={{ height: '75vh' }}>
-        <FlowFieldNoSSR />
       </div>
     </>
   );

@@ -6,7 +6,8 @@ import { generateProjectMetadata } from '../../../utils/metadata';
 
 export const metadata = generateProjectMetadata({
   title: 'Voxel Renderer',
-  description: 'An efficient renderer for large numbers of voxels using Three.js and instanced rendering techniques.',
+  description:
+    'An efficient renderer for large numbers of voxels using Three.js and instanced rendering techniques.',
   image: '/static/images/voxel-renderer-thumbnail.png',
   slug: 'voxel-renderer',
   tags: ['Shaders', 'Web', 'Three.js', 'TypeScript'],
@@ -17,6 +18,9 @@ export default function VoxelRendererPage() {
     <>
       <BackLink />
       <PageTitle>Voxel Renderer</PageTitle>
+      <div className="w-full" style={{ height: '60vh' }}>
+        <VoxelRenderer />
+      </div>
       <div className="text-gray-200">
         <p className="mb-4">
           This was preparatory work completed ahead of a project that needed to
@@ -36,9 +40,6 @@ export default function VoxelRendererPage() {
           </ExternalLink>
           .
         </p>
-      </div>
-      <div className="w-full" style={{ height: '75vh' }}>
-        <VoxelRenderer />
       </div>
     </>
   );

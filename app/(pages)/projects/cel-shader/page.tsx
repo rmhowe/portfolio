@@ -6,7 +6,8 @@ import { generateProjectMetadata } from '../../../utils/metadata';
 
 export const metadata = generateProjectMetadata({
   title: 'Cel Shader',
-  description: 'A cel shader in Three.js used for rapid prototyping and iteration of toon-style rendering effects.',
+  description:
+    'A cel shader in Three.js used for rapid prototyping and iteration of toon-style rendering effects.',
   image: '/static/images/cel-shader-thumbnail.png',
   slug: 'cel-shader',
   tags: ['Shaders', 'Web', 'Three.js', 'TypeScript'],
@@ -17,6 +18,9 @@ export default function CelShaderPage() {
     <>
       <BackLink />
       <PageTitle>Cel Shader</PageTitle>
+      <div className="w-full" style={{ height: '60vh' }}>
+        <CelShader />
+      </div>
       <div className="text-gray-200">
         <p className="mb-4">
           This is a cel shader that will ultimately be used in a source build of
@@ -37,9 +41,6 @@ export default function CelShaderPage() {
           </ExternalLink>
           .
         </p>
-      </div>
-      <div className="w-full" style={{ height: '75vh' }}>
-        <CelShader />
       </div>
     </>
   );

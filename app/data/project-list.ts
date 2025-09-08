@@ -44,14 +44,6 @@ export const projectList: Project[] = [
     logos: ['threejs', 'typescript'],
   },
   {
-    title: 'WebGPU Game of Life',
-    description: "Conway's Game of Life implemented in WebGPU and React.",
-    image: GameOfLifeThumb,
-    linkTo: 'webgpu-game-of-life',
-    tags: ['GPU', 'Web'],
-    logos: ['webgpu', 'typescript'],
-  },
-  {
     title: 'Cel Shader',
     description:
       'A cel shader in Three.js used for rapid prototyping and iteration.',
