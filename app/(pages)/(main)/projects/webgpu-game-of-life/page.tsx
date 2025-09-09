@@ -1,12 +1,13 @@
-import { BackLink } from '../../../components/BackLink';
-import { PageTitle } from '../../../components/PageTitle';
-import { GameOfLife } from '../../../components/webgpu-game-of-life/GameOfLife';
-import { ExternalLink } from '../../../components/ExternalLink';
-import { generateProjectMetadata } from '../../../utils/metadata';
+import { BackLink } from '../../../../components/BackLink';
+import { PageTitle } from '../../../../components/PageTitle';
+import { GameOfLife } from '../../../../components/webgpu-game-of-life/GameOfLife';
+import { ExternalLink } from '../../../../components/ExternalLink';
+import { generateProjectMetadata } from '../../../../utils/metadata';
 
 export const metadata = generateProjectMetadata({
   title: 'WebGPU Game of Life',
-  description: "Conway's Game of Life implemented in WebGPU and React with compute shaders for high-performance cellular automata simulation.",
+  description:
+    "Conway's Game of Life implemented in WebGPU and React with compute shaders for high-performance cellular automata simulation.",
   image: '/static/images/webgpu-game-of-life-thumbnail.png',
   slug: 'webgpu-game-of-life',
   tags: ['GPU', 'Web', 'WebGPU', 'TypeScript'],

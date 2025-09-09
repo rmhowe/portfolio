@@ -1,8 +1,8 @@
-import { CelShader } from '../../../components/cel-shader/CelShader';
-import { BackLink } from '../../../components/BackLink';
-import { PageTitle } from '../../../components/PageTitle';
-import { ExternalLink } from '../../../components/ExternalLink';
-import { generateProjectMetadata } from '../../../utils/metadata';
+import { CelShader } from '../../../../components/cel-shader/CelShader';
+import { BackLink } from '../../../../components/BackLink';
+import { PageTitle } from '../../../../components/PageTitle';
+import { ExternalLink } from '../../../../components/ExternalLink';
+import { generateProjectMetadata } from '../../../../utils/metadata';
 
 export const metadata = generateProjectMetadata({
   title: 'Cel Shader',

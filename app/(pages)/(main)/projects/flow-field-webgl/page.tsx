@@ -1,7 +1,7 @@
-import { BackLink } from '../../../components/BackLink';
-import { PageTitle } from '../../../components/PageTitle';
-import { ExternalLink } from '../../../components/ExternalLink';
-import { generateProjectMetadata } from '../../../utils/metadata';
+import { BackLink } from '../../../../components/BackLink';
+import { PageTitle } from '../../../../components/PageTitle';
+import { ExternalLink } from '../../../../components/ExternalLink';
+import { generateProjectMetadata } from '../../../../utils/metadata';
 import { FlowFieldNoSSR } from '@/app/components/flow-field';
 
 export const metadata = generateProjectMetadata({

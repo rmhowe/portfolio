@@ -1,8 +1,8 @@
-import { BackLink } from '../../../components/BackLink';
-import { PageTitle } from '../../../components/PageTitle';
-import { ExternalLink } from '../../../components/ExternalLink';
-import { VoxelRenderer } from '../../../components/voxel-renderer/VoxelRenderer';
-import { generateProjectMetadata } from '../../../utils/metadata';
+import { BackLink } from '../../../../components/BackLink';
+import { PageTitle } from '../../../../components/PageTitle';
+import { ExternalLink } from '../../../../components/ExternalLink';
+import { VoxelRenderer } from '../../../../components/voxel-renderer/VoxelRenderer';
+import { generateProjectMetadata } from '../../../../utils/metadata';
 
 export const metadata = generateProjectMetadata({
   title: 'Voxel Renderer',

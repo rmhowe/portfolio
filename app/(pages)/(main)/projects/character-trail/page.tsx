@@ -1,8 +1,8 @@
 import Image from 'next/image';
-import { BackLink } from '../../../components/BackLink';
-import { ExternalLink } from '../../../components/ExternalLink';
-import { PageTitle } from '../../../components/PageTitle';
-import { generateProjectMetadata } from '../../../utils/metadata';
+import { BackLink } from '../../../../components/BackLink';
+import { ExternalLink } from '../../../../components/ExternalLink';
+import { PageTitle } from '../../../../components/PageTitle';
+import { generateProjectMetadata } from '../../../../utils/metadata';
 
 // Static image imports
 import characterTrailImage from '../../../assets/images/character-trail/character-trail.png';
