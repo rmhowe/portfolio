@@ -128,7 +128,7 @@ export function Particles({ model }: { model: GLTF }) {
 
   return (
     <>
-      <points rotation={[-Math.PI / 2, 0, 0]} scale={3}>
+      <points frustumCulled={false} rotation={[-Math.PI / 2, 0, 0]} scale={3}>
         <bufferGeometry ref={particleGeometryRef} />
         <shaderMaterial
           ref={particleMaterialRef}

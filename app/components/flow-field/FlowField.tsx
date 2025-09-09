@@ -13,7 +13,7 @@ export default function FlowField() {
         fov: 75,
         near: 0.1,
         far: 1000,
-        position: [3.5, 2.75, 5],
+        position: [2.2, 2, 3],
       }}
       scene={{ background: new THREE.Color(0x444488) }}
       shadows={{ enabled: true, type: THREE.PCFSoftShadowMap }}
