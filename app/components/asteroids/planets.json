@@ -1,0 +1,130 @@
+[
+  {
+    "id": "mercury",
+    "name": "Mercury",
+    "orbital_data": {
+      "semi_major_axis": "0.387098",
+      "eccentricity": "0.205630",
+      "inclination": "7.00487",
+      "ascending_node_longitude": "48.331",
+      "perihelion_argument": "29.124",
+      "mean_anomaly": "174.796",
+      "orbital_period": "87.969",
+      "perihelion_distance": "0.3075",
+      "aphelion_distance": "0.4667",
+      "orbit_class": { "orbit_class_type": "Planet" }
+    }
+  },
+  {
+    "id": "venus",
+    "name": "Venus",
+    "orbital_data": {
+      "semi_major_axis": "0.723332",
+      "eccentricity": "0.006772",
+      "inclination": "3.39471",
+      "ascending_node_longitude": "76.680",
+      "perihelion_argument": "54.884",
+      "mean_anomaly": "50.115",
+      "orbital_period": "224.701",
+      "perihelion_distance": "0.7184",
+      "aphelion_distance": "0.7282",
+      "orbit_class": { "orbit_class_type": "Planet" }
+    }
+  },
+  {
+    "id": "earth",
+    "name": "Earth",
+    "orbital_data": {
+      "semi_major_axis": "1.000000",
+      "eccentricity": "0.0167086",
+      "inclination": "0.00005",
+      "ascending_node_longitude": "-11.26064",
+      "perihelion_argument": "114.20783",
+      "mean_anomaly": "357.51716",
+      "orbital_period": "365.256",
+      "perihelion_distance": "0.9833",
+      "aphelion_distance": "1.0167",
+      "orbit_class": { "orbit_class_type": "Planet" }
+    }
+  },
+  {
+    "id": "mars",
+    "name": "Mars",
+    "orbital_data": {
+      "semi_major_axis": "1.523679",
+      "eccentricity": "0.0934",
+      "inclination": "1.850",
+      "ascending_node_longitude": "49.558",
+      "perihelion_argument": "286.502",
+      "mean_anomaly": "19.373",
+      "orbital_period": "686.971",
+      "perihelion_distance": "1.381",
+      "aphelion_distance": "1.666",
+      "orbit_class": { "orbit_class_type": "Planet" }
+    }
+  },
+  {
+    "id": "jupiter",
+    "name": "Jupiter",
+    "orbital_data": {
+      "semi_major_axis": "5.2044",
+      "eccentricity": "0.0489",
+      "inclination": "1.304",
+      "ascending_node_longitude": "100.464",
+      "perihelion_argument": "273.867",
+      "mean_anomaly": "20.020",
+      "orbital_period": "4332.59",
+      "perihelion_distance": "4.950",
+      "aphelion_distance": "5.458",
+      "orbit_class": { "orbit_class_type": "Planet" }
+    }
+  },
+  {
+    "id": "saturn",
+    "name": "Saturn",
+    "orbital_data": {
+      "semi_major_axis": "9.5826",
+      "eccentricity": "0.0565",
+      "inclination": "2.485",
+      "ascending_node_longitude": "113.665",
+      "perihelion_argument": "339.392",
+      "mean_anomaly": "317.020",
+      "orbital_period": "10759.22",
+      "perihelion_distance": "9.014",
+      "aphelion_distance": "10.12",
+      "orbit_class": { "orbit_class_type": "Planet" }
+    }
+  },
+  {
+    "id": "uranus",
+    "name": "Uranus",
+    "orbital_data": {
+      "semi_major_axis": "19.189",
+      "eccentricity": "0.04717",
+      "inclination": "0.773",
+      "ascending_node_longitude": "74.006",
+      "perihelion_argument": "96.998",
+      "mean_anomaly": "142.238",
+      "orbital_period": "30688.5",
+      "perihelion_distance": "18.33",
+      "aphelion_distance": "20.08",
+      "orbit_class": { "orbit_class_type": "Planet" }
+    }
+  },
+  {
+    "id": "neptune",
+    "name": "Neptune",
+    "orbital_data": {
+      "semi_major_axis": "30.07",
+      "eccentricity": "0.008678",
+      "inclination": "1.770",
+      "ascending_node_longitude": "131.784",
+      "perihelion_argument": "273.187",
+      "mean_anomaly": "256.228",
+      "orbital_period": "60182",
+      "perihelion_distance": "29.81",
+      "aphelion_distance": "30.33",
+      "orbit_class": { "orbit_class_type": "Planet" }
+    }
+  }
+]
