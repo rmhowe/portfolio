@@ -18,7 +18,7 @@ export default function Home() {
       <h3 className="w-full text-gray-300">
         Front End Developer
         <br />
-        Graphics Programmer
+        Technical Artist
       </h3>
 
       <div className="w-full flex justify-center gap-10 mt-10">
