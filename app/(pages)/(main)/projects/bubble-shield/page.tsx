@@ -5,17 +5,17 @@ import { PageTitle } from '../../../../components/PageTitle';
 import { generateProjectMetadata } from '../../../../utils/metadata';
 
 // Static image imports
-import bubbleShieldImage from '../../../assets/images/bubble-shield/bubble-shield.png';
-import haloBubbleShieldImage from '../../../assets/images/bubble-shield/halo-bubble-shield.jpg';
-import haloBubbleShieldIngameImage from '../../../assets/images/bubble-shield/halo-bubble-shield-ingame.jpg';
-import bubbleBlenderUvImage from '../../../assets/images/bubble-shield/bubble-blender-uv.png';
-import bubbleHoudiniUvImage from '../../../assets/images/bubble-shield/bubble-houdini-uv.png';
-import bubbleShieldTextureImage from '../../../assets/images/bubble-shield/bubble-shield-texture.png';
-import hexsphereRefractionImage from '../../../assets/images/bubble-shield/hexsphere-refraction.png';
-import hexsphereNormalImage from '../../../assets/images/bubble-shield/hexsphere-normal.png';
-import material1Image from '../../../assets/images/bubble-shield/material-1.png';
-import material2Image from '../../../assets/images/bubble-shield/material-2.png';
-import materialAnimationImage from '../../../assets/images/bubble-shield/material-animation.png';
+import bubbleShieldImage from '../../../../assets/images/bubble-shield/bubble-shield.png';
+import haloBubbleShieldImage from '../../../../assets/images/bubble-shield/halo-bubble-shield.jpg';
+import haloBubbleShieldIngameImage from '../../../../assets/images/bubble-shield/halo-bubble-shield-ingame.jpg';
+import bubbleBlenderUvImage from '../../../../assets/images/bubble-shield/bubble-blender-uv.png';
+import bubbleHoudiniUvImage from '../../../../assets/images/bubble-shield/bubble-houdini-uv.png';
+import bubbleShieldTextureImage from '../../../../assets/images/bubble-shield/bubble-shield-texture.png';
+import hexsphereRefractionImage from '../../../../assets/images/bubble-shield/hexsphere-refraction.png';
+import hexsphereNormalImage from '../../../../assets/images/bubble-shield/hexsphere-normal.png';
+import material1Image from '../../../../assets/images/bubble-shield/material-1.png';
+import material2Image from '../../../../assets/images/bubble-shield/material-2.png';
+import materialAnimationImage from '../../../../assets/images/bubble-shield/material-animation.png';
 import { containerMaxWidth } from '@/app/utils/sizes';
 
 export const metadata = generateProjectMetadata({

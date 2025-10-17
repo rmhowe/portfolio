@@ -5,14 +5,14 @@ import { PageTitle } from '../../../../components/PageTitle';
 import { generateProjectMetadata } from '../../../../utils/metadata';
 
 // Static image imports
-import characterTrailImage from '../../../assets/images/character-trail/character-trail.png';
-import edgerunners1Image from '../../../assets/images/character-trail/edgerunners-1.png';
-import edgerunners2Image from '../../../assets/images/character-trail/edgerunners-2.png';
-import echoCreationImage from '../../../assets/images/character-trail/echo-creation.png';
-import echoBeginPlayImage from '../../../assets/images/character-trail/echo-begin-play.png';
-import colorCurveImage from '../../../assets/images/character-trail/color-curve.png';
-import materialEchoesImage from '../../../assets/images/character-trail/material-echoes.png';
-import materialScreenImage from '../../../assets/images/character-trail/material-screen.png';
+import characterTrailImage from '../../../../assets/images/character-trail/character-trail.png';
+import edgerunners1Image from '../../../../assets/images/character-trail/edgerunners-1.png';
+import edgerunners2Image from '../../../../assets/images/character-trail/edgerunners-2.png';
+import echoCreationImage from '../../../../assets/images/character-trail/echo-creation.png';
+import echoBeginPlayImage from '../../../../assets/images/character-trail/echo-begin-play.png';
+import colorCurveImage from '../../../../assets/images/character-trail/color-curve.png';
+import materialEchoesImage from '../../../../assets/images/character-trail/material-echoes.png';
+import materialScreenImage from '../../../../assets/images/character-trail/material-screen.png';
 import { containerMaxWidth } from '@/app/utils/sizes';
 
 export const metadata = generateProjectMetadata({
